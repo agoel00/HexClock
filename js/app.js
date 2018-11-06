@@ -4,8 +4,8 @@ var hexColor = document.getElementById("hex-color");
 function hexClock() {
     var time = new Date();
     var hours = (time.getHours()%12).toString();
-    var minutes = (time.getMinutes()%12).toString();
-    var seconds = (time.getSeconds()%12).toString();
+    var minutes = (time.getMinutes()).toString();
+    var seconds = (time.getSeconds()).toString();
     
     if(hours.length < 2) {
         hours = '0' + hours;
